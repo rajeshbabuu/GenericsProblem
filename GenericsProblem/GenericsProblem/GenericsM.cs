@@ -25,7 +25,7 @@ namespace GenericsProblem
             {
                 return thirdNum;
             }
-            return secondNum;
+            return thirdNum;
 
         }
 
