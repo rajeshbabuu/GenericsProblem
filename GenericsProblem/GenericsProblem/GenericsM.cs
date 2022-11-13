@@ -9,7 +9,7 @@ namespace GenericsProblem
     public class GenericsM
     {
 
-        public static int MaxIntNumber(int firstNum, int secondNum, int thirdNum)
+        public static double MaxIntNumber(double firstNum, double secondNum, double thirdNum)
         {
             if (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0 || firstNum.CompareTo(secondNum) >= 0 && firstNum.CompareTo(thirdNum) > 0 || firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) >= 0)
             {
@@ -25,7 +25,7 @@ namespace GenericsProblem
             {
                 return thirdNum;
             }
-            return thirdNum;
+            return firstNum;
 
         }
 
