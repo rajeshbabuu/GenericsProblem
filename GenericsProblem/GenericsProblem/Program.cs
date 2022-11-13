@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            int maxNumber = GenericsM.MaxIntNumber(154, 64, 90);
+            Console.WriteLine("\n Maximum Number is " + maxNumber); 
+
         }
     }
 }
