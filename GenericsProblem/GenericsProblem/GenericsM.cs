@@ -6,25 +6,37 @@ using System.Threading.Tasks;
 
 namespace GenericsProblem
 {
-    internal class GenericsM
+    public class GenericsMax<T> where T : IComparable
     {
-        public static T MaxIntNumber<T>(T firstNum, T secondNum, T thirdNum) where T : IComparable
+        public T firstNum, secondNum, thirdNum;
+
+        public GenericsMax(T firstNum, T secondNum, T thirdNum)
+        {
+            this.firstNum = firstNum;
+            this.secondNum = secondNum;
+            this.thirdNum = thirdNum;
+        }
+
+        public static T MaxIntegerNumber(T firstNum, T secondNum, T thirdNum)
         {
             if (firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) > 0 || firstNum.CompareTo(secondNum) >= 0 && firstNum.CompareTo(thirdNum) > 0 || firstNum.CompareTo(secondNum) > 0 && firstNum.CompareTo(thirdNum) >= 0)
             {
                 return firstNum;
             }
-
             if (secondNum.CompareTo(firstNum) > 0 && secondNum.CompareTo(thirdNum) > 0 || secondNum.CompareTo(firstNum) >= 0 && secondNum.CompareTo(thirdNum) > 0 || secondNum.CompareTo(firstNum) > 0 && secondNum.CompareTo(thirdNum) >= 0)
             {
                 return secondNum;
             }
 
-            if (thirdNum.CompareTo(firstNum) > 0 && thirdNum.CompareTo(secondNum) > 0 || thirdNum.CompareTo(firstNum) >= 0 && thirdNum.CompareTo(secondNum) > 0 || thirdNum.CompareTo(firstNum) > 0 && thirdNum.CompareTo(secondNum) >= 0)
+            if (thirdNum.CompareTo(firstNum) > 0 && thirdNum.CompareTo(firstNum) > 0 || thirdNum.CompareTo(firstNum) >= 0 && thirdNum.CompareTo(firstNum) > 0 || thirdNum.CompareTo(firstNum) > 0 && thirdNum.CompareTo(firstNum) >= 0)
             {
                 return thirdNum;
             }
             return firstNum;
         }
+
     }
-}
+           
+        }
+    
+
