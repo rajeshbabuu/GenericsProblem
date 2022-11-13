@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
 
-            int maxNumber = GenericsM.MaxIntNumber(154, 64, 90);
-            Console.WriteLine("\n Maximum Number is " + maxNumber); 
+            int maxNumber = GenericsM.MaxIntNumber(854, 1764, 909);
+            Console.WriteLine("\n Maximum Number is " + maxNumber);
 
         }
     }
